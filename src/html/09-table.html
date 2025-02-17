@@ -5,17 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>테이블 관련 요소</title>
     <style>
-      table,
+      body {
+        background-color: #eeecec;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: black;
+      }
+      table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background-color: white;
+      }
+      caption {
+        font-size: 1.5rem;
+        margin: 10px;
+        font-weight: bold;
+        color: brown;
+      }
       th,
       td {
-        border: 1px solid currentColor;
-        border-spacing: 0;
-        border-collapse: collapse;
+        padding: 15px;
+        text-align: center;
+        border: 1px solid black;
+      }
+      th {
+        background-color: rgb(88, 88, 226);
+        color: white;
+        font-size: 1.2em;
+      }
+      tfoot th {
+        background-color: black;
+        color: white;
       }
     </style>
   </head>
   <body>
     <h1>테이블 관련 요소</h1>
+    <h2>테이블 예제</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>학습시간</th>
+          <td>09:00~17:00(28시간)</td>
+          <th>난이도</th>
+          <td>초급</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>교육비 지원</th>
+          <td>고용보험 비환급</td>
+          <th>평가항목</th>
+          <td>출석률 100%</td>
+        </tr>
+        <tr>
+          <th>수료기준</th>
+          <td>총점 80점 이상시 수료</td>
+          <th>정원</th>
+          <td>24명</td>
+        </tr>
+        <tr>
+          <th>교재정보</th>
+          <td colspan="3">
+            입문자를 위한 GIT과 HTML&CSS<br />HTML&CSS 웹사이트 개발과 디자인
+            기초(35,000원)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>테이블 기본 요소</h1>
     <table>
       <caption>
         멋쟁이 사자처럼 프론트엔드 스쿨 13기 스탭
