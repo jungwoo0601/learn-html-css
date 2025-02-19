@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe, object 요소</title>
+  </head>
+  <body>
+    <!-- iframe을 활용하여 비디오 삽입하기 -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://youtube.com/embed/eHEVbj6S2nM"
+      title="기타치는정우 YOUTUBE"
+      referrerpolicy="strict-origin-when-cross-origin"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <hr />
+    <!-- pdf 삽입입 -->
+    <figure>
+      <object
+        type="application/pdf"
+        data="/src/assets/pdf/wai-aria.pdf"
+        width="600"
+        height="440"
+      ></object>
+      <figcaption>WAI-ARIA</figcaption>
+    </figure>
+  </body>
+</html>
