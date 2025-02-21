@@ -1,0 +1,27 @@
+.member-service {
+  background-color: yellow;
+  /* font-variant: small-caps; */
+  text-transform: uppercase;
+
+  /* font 단축 속성을 사용 */
+  font: 1.125rem;
+}
+
+.item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item.first::before {
+  content: '' !important;
+}
+
+.item::before {
+  content: ': ';
+}
+
+/* 구조 선택자를 이용할 때 */
+a:nth-child(n + 2)::before {
+  background-color: pink;
+  content: ':';
+}

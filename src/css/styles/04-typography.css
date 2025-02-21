@@ -1,0 +1,36 @@
+/* font-family 속성 - 글꼴 */
+/* 루트 요소 */
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Pretendard Variable';
+  /* font-family: 'SUIT', sans-serif; */
+  font-weight: 400;
+  font-size: 1.25rem; /* 부모가 10px이므로 (10*1.5) 하면 15px과 같음 */
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/* font 관련 속성 - 글자 크기, 굵기, 기울임꼴 */
+.size {
+  color: green;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  font-variant: small-caps;
+  font-family: 'pretendard variable', sans-serif;
+
+  font: bold italic small-caps 24px /1.5 'pretendard variable';
+}
+
+/* weight style variant는 우선순위 (3개 간에는 우선순위 없음)
+글자크기와 글꼴은 꼭 필요.
+
+font를 단축 속성으로 사용하려면
+font-size, font-family를 포함해야한다. */

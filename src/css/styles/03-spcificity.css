@@ -1,0 +1,37 @@
+h1 {
+  font-size: 1em;
+}
+
+/* inline style : 1000점 */
+
+/* id : 100점 */
+#ai {
+  background-color: pink;
+}
+
+/* class : 10점 */
+.ai {
+  background-color: orange !important;
+}
+
+body h2 + p {
+  background-color: yellow;
+}
+
+/* 2점 */
+body p {
+  background-color: yellow;
+}
+
+/* 1점 */
+p {
+  background-color: lime;
+}
+
+.ai {
+  border: 10px dotted blue;
+}
+
+a {
+  color: inherit;
+}
