@@ -1,0 +1,44 @@
+@import '/src/common/best-reset.css';
+
+body {
+  margin: 40px;
+}
+
+.lion {
+  border: 1px solid black;
+  background-color: black;
+
+  .like {
+    border: 1px solid red;
+    background-color: yellow;
+    position: relative;
+    height: 50px;
+    top: -5px;
+    left: -5px;
+  }
+}
+
+.box {
+  position: relative;
+  border: 1px solid blue;
+  height: 100px;
+}
+
+.bootcamp {
+  position: absolute;
+  background-color: aqua;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 50px;
+}
+
+h6 {
+  background-color: pink;
+}
+
+span {
+  display: block;
+}
